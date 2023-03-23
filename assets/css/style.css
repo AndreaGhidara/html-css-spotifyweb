@@ -1,11 +1,10 @@
-/**********************
-        GeneralRule
-***********************/
+/**************
+    GeneralRule
+***************/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
 }
 
 :root{
@@ -15,61 +14,53 @@
     --footer:#282828;
 }
 
-
-
-a{
-    color: white;
-    text-decoration: none;
-}
-
 ul{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.col-1-2{
+    width: calc(100% / 2);
+}
+
+.header a,
+.header li,
+.header p{
+    display: none;
+    color: white;
+}
+
 /**************
-    Components
+    Utility
 ***************/
-.containerFull{
-    width: 100%;
-    min-height: calc(100% - 90px);
+.padIcont{
+    font-size: 3.5vw;
+    padding: 0.3em;
+}
+
+.ScreenOff{
+    display: none;
+}
+
+.ScreenOn{
+    display: block;
+}
+
+.overFlow{
+    overflow-y: scroll;
 }
 
 .borderBottom{
     border-bottom: 1px solid grey;
 }
-
-.userFrame{
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background-color: lightgray;
-}
-
-.dective{
-    display: none;
-}
-
-.fs13{font-size: 13px;}
-
-.btn{
-    padding:0.5rem 0.8rem;
-    border: 1px solid white;
-    color: white;
-    border-radius: 20px;
-    background-color: #000000;
-}
-
-
-.btnXL{
-    font-size: 16px;
-    font-weight: 800;
-    padding:1rem 2rem;
-    color: #ffffff;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10em;
-    border: 1px solid white;
-}
-/* dimensioni */
-
 
 /* color */
 .bg-primary{background-color: var(--header);}
@@ -81,27 +72,15 @@ ul{
 .bg-footer{background-color:var(--footer) ;}
 
 
-
-/**********************
-        Project
-***********************/
-
-/*********
-    HEADER
-**********/
-
+/**************
+    header
+***************/
 .header{
-    width: 15%;
-    min-height: calc(100% - 90px);
-}
-/* top */
-.logoBox{
-    width: 100%;
-    max-width: 9rem;
+    width: 4rem;
 }
 
-.linkHeader{
-    padding-left: 1rem;
+.logoSmall{
+    width: 32px;
 }
 
 .squereIcon{
@@ -109,60 +88,81 @@ ul{
     border-radius: 5px;
     background-color: grey;
 }
-/* bottom */
-.menuUser ul li{
-    padding:0.5rem 0;
+
+.createPlaylist{
+    max-height: 10rem;
 }
 
-/*********
-    MAIN
-**********/
+/**************
+    main
+***************/
 .main{
     width: 100%;
     height: calc(100vh - 90px);
-    overflow-y: scroll;
 }
 
-.gender ul li{
-    padding: 0.5rem;
-}
-/* navbar */
-.navbar{
+.hero{
     width: 100%;
-    height: 4rem;
-    background-color: rgb(241, 124, 124);
+    max-height: 100%;
+}
+
+.navBar{
+    width: 100%;
+    height: 50px;
     position: sticky;
     top: 0;
 }
 
+.btnXL{
+    font-size: 16px;
+    font-weight: 800;
+    padding:1vw 4vw;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10em;
+    border: 1px solid white;
+}
+
+.navLink ul li{
+    padding: 0.2rem;
+    font-size: 13px;
+}
+
+.userFrame{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+/* card */
 .cardBox{
     width: 100%;
 }
 
 .card{
-    width: calc(100% / 6);
+    width: calc(100% / 2 - 10px);
 }
-
 
 .cardImg {
     width: 100%;
 }
 
-/*********
+/**************
     Footer
-**********/
+***************/
+
 .footer{
-    width: 100%;
     height: 90px;
 }
 
 .footer img{
+    width: 50px;
     object-fit: contain;
-    width: 4vw;
-    margin-right: 1rem;
-    
 }
 
+.nameSong{
+    font-size: 12px;
+}
 
 .progresBar{
     height: 0.2rem;
@@ -192,81 +192,77 @@ ul{
     border-radius: 10px;
 }
 
-@media screen and (max-width:1143px) {
-
-
-    .header{
-        min-width: 147px;
+/**************************************
+        MobileL
+***************************************/
+@media screen and (min-width: 425px) {
+    
+    .padIcont{
+        font-size: 1rem;
+        padding: 0.3em;
     }
 
+    .footer .volPlayer{
+        flex-direction: row;
+    }
+}
+
+/**************************************
+        Tablet
+***************************************/
+@media screen and (min-width: 768px) {
     .card{
         width: calc(100% / 4 - 10px);
     }
-
-    .cardBox{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-
-@media screen and (max-width:610px) {
-
-    .navbar .btnXL{
-        font-size: 13px;
+    .header{
+        padding: 0.5rem;
     }
 
-    .gender{
-        font-size: 13px;
-    }
-
-    .footer p{
-        font-size: 13px;
-    }
-
-    .nameSong{
+    .ScreenOn{
         display: none;
     }
-}
 
-@media screen and (max-width:450px) {
-    .dective{
+    .ScreenOff{
         display: block;
     }
-    
-    .header{
-        min-width: 3rem;
-        max-width: 2rem;
-    }
 
-    .header p,
+    .header a,
     .header li,
-    .actvie{
-        display: none;
+    .header p{
+    display: block;
+    padding-left: 0.2rem;
     }
 
-    .navbar .btnXL{
-        font-size: 10px;
-        padding: 1em;
+    .createPlaylist li{
+    padding: 0.4rem 0;
     }
 
-
-    .card{
-        width: calc(100% / 2 - 10px);
+    .padIcont{
+        font-size: 1.2rem;
+        padding: 0.5em;
     }
 
-    .cardBox{
-        display: flex;
-        flex-wrap: wrap;
+    .header{
+        width: 10rem;
     }
-
-    .footer i{
-        padding: 0.2em;
-    }
-
-    .progresBar,
-    .volBar{
-        width: 10vw;
-    }
-
 }
+
+/**************************************
+        Laptop
+***************************************/
+@media screen and (min-width: 1024px) {
+    .card{
+        width: calc(100% / 6 - 10px);
+    }
+    .btnXL{
+        font-size: 16px;
+        font-weight: 800;
+        padding:0.5rem 4rem;
+        color: #ffffff;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10em;
+}
+
+/**************************************
+        Laptop L
+***************************************/

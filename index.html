@@ -8,80 +8,73 @@
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/helper.css">
-    <!-- font google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- font awsome -->
     <script src='https://kit.fontawesome.com/904cc76917.js' crossorigin= 'anonymous'></script>
 </head>
 <body>
-    <div class="flex flexCol">
-        <div class="containerFull flex">
-            <!-- header -->
-            <div class="header flex flexCol flexSpaceBtw bg-primary fs13">
-                <div class="topHeader pad0"> <!--Top Header-->
-                    <div class="logoBox padY0">
-                        <img class="dective" src="./assets/img/logo-small.svg" width="30px" alt="">
-                        <img class="actvie" src="./assets/img/logo.svg" alt="">
-                    </div>
-                    <div class="menuGeneral padBottom1">
-                        <div class="label flex padY0 flexItemsCenter">
-                            <img src="./assets/img/home.svg" width="25px" alt="">
-                            <a href="">
-                                <p class="linkHeader">Home</p>
-                            </a>
+    <main>
+        <div class="main flex Clwhite bg-main">
+            <div class="header bg-primary flex flexCol flexSpaceBtw flexItemsCenter"> <!--Header-->
+                    <div class="top">
+                        <div class="logoSmall marTop0 ScreenOn">
+                            <img src="./assets/img/logo-small.svg" alt="">
                         </div>
-                        <div class="label flex padY0 flexItemsCenter">
-                            <img src="./assets/img/search.svg" width="25px" alt="">
-                            <a href="">
-                                <p class="linkHeader">Cerca</p>
-                            </a>
+                        <div class="logoSmall marTop0 ScreenOff">
+                            <img src="./assets/img/logo.svg" width="120px" alt="">
                         </div>
-                        <div class="label flex padY0 flexItemsCenter">
-                            <img src="./assets/img/libreria.svg" width="25px" alt="">
-                            <a href="">
-                                <p class="linkHeader">La tua libreria</p>
-                            </a>
+                        <div class="menu flex flexCol">
+                            <div class="label flex padY0 flexItemsCenter">
+                                <img src="./assets/img/home.svg" width="30px" alt="">
+                                <a href="#"><p class="linkHeader">Home</p></a>
+                            </div>
+                            <div class="label flex padY0 flexItemsCenter">
+                                <img src="./assets/img/search.svg" width="30px" alt="">
+                                <a href=""><p class="linkHeader">Cerca</p>
+                                </a>
+                            </div>
+                            <div class="label flex padY0 flexItemsCenter">
+                                <img src="./assets/img/libreria.svg" width="30px" alt="">
+                                <a href=""><p class="linkHeader">La tua libreria</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="menuUser Clwhite">
+                            <div class="createPlaylist flex flexItemsCenter padY0">
+                                <i class="squereIcon fa-solid fa-plus" style="color: #000000;"></i>
+                                <p class="linkHeader marLeft0">Crea playlist</p>
+                            </div>
+                            <div class="createPlaylist overFlow">
+                                <ul>
+                                    <li>Nuova Playlist</li>
+                                    <li>Nuova Playlist</li>
+                                    <li>Nuova Playlist</li>
+                                    <li>Nuova Playlist</li>
+                                    <li>Nuova Playlist</li>
+                                    <li>Nuova Playlist</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bottom flexItemsCenter">
+                        <div class="flex flexCol">
+                            <div class="flex Clwhite borderBottom padBottom0">
+                                <i class="fsXL fa-regular fa-circle-down"></i>
+                                <a href=""><p>Installa app</p></a>
+                            </div>
+                            <div class="Clwhite flex padY0 flexItemsCenter">
+                                <img class="userFrame" width="25px" src="./assets/img/profile.svg" alt="">
+                                <p class="marLeft0">Jhon Doe</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="menuUser Clwhite">
-                        <div class="createPlaylist flex flexItemsCenter padY0">
-                            <i class="squereIcon fa-solid fa-plus" style="color: #000000;"></i>
-                            <p class="linkHeader">Crea playlist</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li>Nuova Playlist</li>
-                                <li>Nuova Playlist</li>
-                                <li>Nuova Playlist</li>
-                                <li>Nuova Playlist</li>
-                                <li>Nuova Playlist</li>
-                                <li>Nuova Playlist</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottomHeader pad0"> <!--Bottom Header-->
-                    <div class="flex Clwhite borderBottom padY0">
-                        <i class="fa-regular fa-circle-down"></i>
-                        <a href="">
-                            <p class="marLeft1">Installa app</p>
-                        </a>
-                    </div>
-                    <div class="Clwhite flex padY0 flexItemsCenter">
-                        <img class="userFrame" width="25px" src="./assets/img/profile.svg" alt="">
-                        <p class="marLeft0">Jhon Doe</p>
-                    </div>
-                </div>
             </div>
-            <!-- main -->
-            <div class="main bg-main">
-                <div class="navbar flex flexItemsCenter flexJustifyEnd">
-                        <button class="upperCase btnXL">EFFETUA L' UPGRADE</button>
+            <div class="hero overFlow"> <!--Hero-->
+                <div class="navBar flex flexItemsCenter flexJustifyEnd pad0 bg-secondary"> <!--navBar-->
+                    <button class="upperCase btnXL">EFFETUA L' UPGRADE</button>
                 </div>
-                <div class="hero flex flexCol pad1 Clwhite">
-                    <div class="gender">
+                <div class="pad0">
+                    <div class="navLink fsS"> <!--navLink-->
                         <ul class="upperCase flex flexJustifyCenter flexWrap">
                             <a href=""><li>In evidenza</li></a>
                             <a href=""><li>Podcast</li></a>
@@ -91,97 +84,100 @@
                             <a href=""><li>Scopri</li></a>
                         </ul>
                     </div>
-                    <div class="row">
-                        <h2 class="fsXL ">Recently played</h2> <!--Title ROW-->
-                        <div class="cardBox flex Clwhite padTop2 gap10"> <!--Card Box-->
-                            <div class="card flex flexCol alignTextCenter"> <!--card-->
-                                <img class="cardImg" src="./assets/img/metal_lifting.jpg" alt="">
+                    <div> <!--list SONG-->
+                        <h2 class="fsL">Recently played</h2>
+                        <div class="cardBox flex flexWrap gap10">
+                            <div class="card alignTextCenter">
+                                <img class="w100" src="./assets/img/metal_lifting.jpg" alt="">
                                 <h4>Heavy Metal</h4>
                                 <p>subtitle</p>
                             </div>
-                            <div class="card flex flexCol alignTextCenter"> <!--card-->
-                                <img class="cardImg" src="./assets/img/stranger.jpeg" alt="">
+                            <div class="card alignTextCenter"> <!--card-->
+                                <img class="w100" src="./assets/img/stranger.jpeg" alt="">
                                 <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundrtack)</h4>
                                 <p>kyle dixon &amp; Micheal stein</p>
                             </div>
-                            <div class="card flex flexCol alignTextCenter"> <!--card-->
-                                <img class="cardImg" src="./assets/img/aquietplace.jpeg" alt="">
+                            <div class="card alignTextCenter"> <!--card-->
+                                <img class="w100" src="./assets/img/aquietplace.jpeg" alt="">
                                 <h4>A quiet place</h4>
                                 <p>subtitle</p>
                             </div>
-                            <div class="card flex flexCol alignTextCenter"> <!--card-->
-                                <img class="cardImg" src="./assets/img/split.jpeg" alt="">
+                            <div class="card alignTextCenter">
+                                <img class="w100" src="./assets/img/split.jpeg" alt="">
                                 <h4>Split</h4>
                                 <p>subtitle</p>
                             </div>
-                            <div class="card flex flexCol alignTextCenter"> <!--card-->
-                                <img class="cardImg" src="./assets/img/cure.jpeg" alt="">
+                            <div class="card alignTextCenter"> <!--card-->
+                                <img class="w100" src="./assets/img/cure.jpeg" alt="">
                                 <h4>A cure of wellness</h4>
                                 <p>subtitle</p>
                             </div>
                             <div class="card flex flexCol alignTextCenter"> <!--card-->
-                                <img class="cardImg" src="./assets/img/sinister.jpeg" alt="">
+                                <img class="w100" src="./assets/img/sinister.jpeg" alt="">
                                 <h4>Sinister</h4>
                                 <p>subtitle</p>
                             </div>
-                            
                         </div>
-                    </div>
-                    <div class="row padY2">
-                        <h3 class="fsXL ">Create per Jhon Doe</h3><!--Title ROW-->
-                        <p class="padY0">Più ascolti. più accurati saranni i suggeriti</p>
-                        <div class="cardBox flex Clwhite padTop2 gap10"> <!--Card Box-->
-                            <div class="card flex flexCol alignTextCenter"> <!--card-->
-                                <img class="cardImg" src="./assets/img/radar.jpeg" alt="">
-                                <h4>Relase Rader</h4>
-                            </div>
-                            <div class="card flex flexCol alignTextCenter"> <!--card-->
-                                <img class="cardImg" src="./assets/img/mixdaily.jpeg" alt="">
-                                <h4>Daily Mix 1</h4>
+                        <div class="row padY2">
+                            <h3 class="fsXL ">Create per Jhon Doe</h3><!--Title ROW-->
+                            <p class="padY0">Più ascolti. più accurati saranni i suggeriti</p>
+                            <div class="cardBox flex Clwhite padTop2 gap10"> <!--Card Box-->
+                                <div class="card flex flexCol alignTextCenter"> <!--card-->
+                                    <img class="cardImg" src="./assets/img/radar.jpeg" alt="">
+                                    <h4>Relase Rader</h4>
+                                </div>
+                                <div class="card flex flexCol alignTextCenter"> <!--card-->
+                                    <img class="cardImg" src="./assets/img/mixdaily.jpeg" alt="">
+                                    <h4>Daily Mix 1</h4>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row padY2">
-                        <h3 class="fsXL ">Artisti più ascoltati</h3><!--Title ROW-->
-                        <p class="padY0">Più ascolti. più accurati saranni i suggeriti</p>
-                        <div class="cardBox flex Clwhite padTop2 gap10"> <!--Card Box-->
-                            <div class="card flex flexCol alignTextCenter"> <!--card-->
-                                <img class="cardImg" src="./assets/img/radar.jpeg" alt="">
-                                <h4>Peaceful</h4>
-                                <p>relax and indugle with beatufoul piano pieces</p>
-                            </div>
-                            <div class="card flex flexCol alignTextCenter"> <!--card-->
-                                <img class="cardImg" src="./assets/img/mixdaily.jpeg" alt="">
-                                <h4>Peaceful</h4>
-                                <p>relax and indugle with beatufoul piano pieces</p>
+                        <div class="row padY2">
+                            <h3 class="fsXL ">Artisti più ascoltati</h3><!--Title ROW-->
+                            <p class="padY0">Più ascolti. più accurati saranni i suggeriti</p>
+                            <div class="cardBox flex Clwhite padTop2 gap10"> <!--Card Box-->
+                                <div class="card flex flexCol alignTextCenter"> <!--card-->
+                                    <img class="cardImg" src="./assets/img/radar.jpeg" alt="">
+                                    <h4>Peaceful</h4>
+                                    <p>relax and indugle with beatufoul piano pieces</p>
+                                </div>
+                                <div class="card flex flexCol alignTextCenter"> <!--card-->
+                                    <img class="cardImg" src="./assets/img/mixdaily.jpeg" alt="">
+                                    <h4>Peaceful</h4>
+                                    <p>relax and indugle with beatufoul piano pieces</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
-        <div class="footer bg-footer flex flexSpaceBtw flexItemsCenter pad0 Clwhite">
-            <div class="songNow flex flexItemsCenter">
-                <img src="./assets/img/sinister.jpeg" width="100px" alt="song">
-                <div class="">
-                    <p class="fsXXL Clwhite nameSong">Sinister</p>
+    </main>
+
+    <footer> <!--FOOTER-->
+        <div class="footer flex flexSpaceBtw flexItemsCenter Clwhite bg-footer">
+            <!--song now-->
+            <div class="flex flexItemsCenter">
+                <img class="pad0" src="./assets/img/sinister.jpeg" alt="song">
+                <div class="nameSong flex flexCol">
+                    <p class="fsS Clwhite nameSong">Sinister</p>
                     <p class="nameSong">brano nome</p>
                 </div>
-                <div class="flex">
-                    <p><i class="pad0 fa-regular fa-heart"></i></p>
-                    <p><i class="pad0 fa-regular fa-folder"></i></p>
+                <div class="flex flexCol marLeft0">
+                    <p><i class=" fa-regular fa-heart"></i></p>
+                    <p><i class=" fa-regular fa-folder"></i></p>
                 </div>
             </div>
-            <div class="songPlay flex flexCol flexItemsCenter">
-                <div class="flex flexItemsCenter"> <!--TOP CONTROL-->
-                    <p class="fsL"><i class="pad0 fa-solid fa-shuffle"></i></p>
-                    <p class="fsL"><i class="pad0 fa-solid fa-backward-step"></i></p>
+            <!--TOP CONTROL-->
+            <div class="fsS flex flex flexCol flexItemsCenter">
+                <div class="flex w100 flexSpaceBtw"> 
+                    <p><i class="padIcont fa-solid fa-backward-step"></i></p>
+                    <p><i class="padIcont fa-solid fa-shuffle"></i></p>
 
-                    <p class="subTitle"><i class="pad0 fa-regular fa-circle-play"></i></p>
+                    <p class="fsXL"><i class="padIcont fa-regular fa-circle-play"></i></p>
 
-                    <p class="fsL"><i class="pad0 fa-solid fa-forward-step"></i></p>
-                    <p class="fsL"><i class="pad0 fa-solid fa-rotate-right"></i></p>
+                    <p><i class="padIcont fa-solid fa-forward-step"></i></p>
+                    <p><i class="padIcont fa-solid fa-rotate-right"></i></p>
                 </div>
                 <div class="flex flexItemsCenter"> <!--Bottom CONTROL-->
                     <p class="pad0">0.25</p>
@@ -190,18 +186,27 @@
                     </div>
                     <p class="pad0">4.35</p>
                 </div>
-            </div>
-            <div class="SongVol">
-                <div class="flex flexItemsCenter">
-                    <p><i class="pad0 fa-solid fa-bars"></i></p>
-                    <p><i class="pad0 fa-solid fa-display"></i></p>
-                    <p><i class="pad0 fa-solid fa-volume-high"></i></p>
-                    <div class="volBar">
-                        <div class="vol"></div>
-                    </div>
+            </div> 
+            <!--music player-->
+            <div class=" flex"> <!--vol player-->
+                    <div class="volPlayer flex flexCol flexItemsCenter">
+                        <p><i class="padIcont fa-solid fa-display"></i></p>
+                        <p><i class="padIcont fa-solid fa-bars"></i></p>
+                        <p><i class="padIcont fa-solid fa-volume-high"></i></p>
+                        <div class="volBar">
+                            <div class="vol"></div>
+                        </div>
                 </div>
-            </div>
+            </div> 
         </div>
-    </div>  
+    </footer>
+
+
+
+
+
+
+
+
 </body>
 </html>

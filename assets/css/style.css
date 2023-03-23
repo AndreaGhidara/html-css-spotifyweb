@@ -15,9 +15,7 @@
     --footer:#282828;
 }
 
-body{
-    overflow: hidden;
-}
+
 
 a{
     color: white;
@@ -33,7 +31,7 @@ ul{
 ***************/
 .containerFull{
     width: 100%;
-    min-height: 90vh;
+    min-height: calc(100% - 90px);
 }
 
 .borderBottom{
@@ -44,7 +42,10 @@ ul{
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: lightgray;
+}
 
+.dective{
+    display: none;
 }
 
 .fs13{font-size: 13px;}
@@ -91,7 +92,7 @@ ul{
 
 .header{
     width: 15%;
-    min-height: 90vh;
+    min-height: calc(100% - 90px);
 }
 /* top */
 .logoBox{
@@ -118,7 +119,7 @@ ul{
 **********/
 .main{
     width: 100%;
-    height: 90vh;
+    height: calc(100vh - 90px);
     overflow-y: scroll;
 }
 
@@ -142,6 +143,7 @@ ul{
     width: calc(100% / 6);
 }
 
+
 .cardImg {
     width: 100%;
 }
@@ -151,7 +153,7 @@ ul{
 **********/
 .footer{
     width: 100%;
-    height:10vh;
+    height: 90px;
 }
 
 .footer img{
@@ -207,29 +209,17 @@ ul{
     }
 }
 
-@media screen and (max-width:985px) {
-    .header{
-        min-width: 147px;
-    }
-
-    .card{
-        width: calc(100% / 2 - 10px);
-    }
-
-    .cardBox{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .navbar{
-        min-height: 90px;
-        position: absolute;
-        bottom: 0;
-        z-index: 12;
-    }
-}
 
 @media screen and (max-width:610px) {
+
+    .navbar .btnXL{
+        font-size: 13px;
+    }
+
+    .gender{
+        font-size: 13px;
+    }
+
     .footer p{
         font-size: 13px;
     }
@@ -240,5 +230,43 @@ ul{
 }
 
 @media screen and (max-width:450px) {
+    .dective{
+        display: block;
+    }
+    
+    .header{
+        min-width: 3rem;
+        max-width: 2rem;
+    }
+
+    .header p,
+    .header li,
+    .actvie{
+        display: none;
+    }
+
+    .navbar .btnXL{
+        font-size: 10px;
+        padding: 1em;
+    }
+
+
+    .card{
+        width: calc(100% / 2 - 10px);
+    }
+
+    .cardBox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer i{
+        padding: 0.2em;
+    }
+
+    .progresBar,
+    .volBar{
+        width: 10vw;
+    }
 
 }

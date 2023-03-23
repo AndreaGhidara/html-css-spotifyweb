@@ -15,6 +15,10 @@
     --footer:#282828;
 }
 
+body{
+    overflow: hidden;
+}
+
 a{
     color: white;
     text-decoration: none;
@@ -25,7 +29,7 @@ ul{
 }
 
 /**************
-    Utility
+    Components
 ***************/
 .containerFull{
     width: 100%;
@@ -42,7 +46,6 @@ ul{
     background-color: lightgray;
 
 }
-
 
 .fs13{font-size: 13px;}
 
@@ -87,7 +90,7 @@ ul{
 **********/
 
 .header{
-    width: 12%;
+    width: 15%;
     min-height: 90vh;
 }
 /* top */
@@ -116,23 +119,126 @@ ul{
 .main{
     width: 100%;
     height: 90vh;
+    overflow-y: scroll;
 }
 
+.gender ul li{
+    padding: 0.5rem;
+}
 /* navbar */
 .navbar{
     width: 100%;
     height: 4rem;
     background-color: rgb(241, 124, 124);
+    position: sticky;
+    top: 0;
 }
 
+.cardBox{
+    width: 100%;
+}
 
+.card{
+    width: calc(100% / 6);
+}
+
+.cardImg {
+    width: 100%;
+}
 
 /*********
     Footer
 **********/
 .footer{
     width: 100%;
-    min-height:10vh;
+    height:10vh;
+}
+
+.footer img{
+    object-fit: contain;
+    width: 4vw;
+    margin-right: 1rem;
+    
 }
 
 
+.progresBar{
+    height: 0.2rem;
+    width: 20vw;
+    border-radius: 10px;
+    background-color: lightslategray;
+}
+
+.progres{
+    background-color: #000000;
+    width: 20%;
+    height: 0.2rem;
+    border-radius: 10px;
+}
+
+.volBar{
+    height: 0.2rem;
+    width: 10vw;
+    border-radius: 10px;
+    background-color: lightslategray;
+}
+
+.vol{
+    background-color: #000000;
+    width: 20%;
+    height: 0.2rem;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1143px) {
+
+
+    .header{
+        min-width: 147px;
+    }
+
+    .card{
+        width: calc(100% / 4 - 10px);
+    }
+
+    .cardBox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:985px) {
+    .header{
+        min-width: 147px;
+    }
+
+    .card{
+        width: calc(100% / 2 - 10px);
+    }
+
+    .cardBox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar{
+        min-height: 90px;
+        position: absolute;
+        bottom: 0;
+        z-index: 12;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .footer p{
+        font-size: 13px;
+    }
+
+    .nameSong{
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+}
